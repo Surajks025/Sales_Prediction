@@ -9,3 +9,4 @@ scipy==1.8.1
 scikit-learn==1.1.1
 matplotlib==3.5.2
 pandas==1.4.3
+Xgboost==1.6.0
