@@ -55,11 +55,11 @@ def upload():
           writer.writerow(header)
           writer.writerows(sales)
         a=r'predicted_sales.csv'
-        b=r'output\predicted_sales.csv'
+        b=r'static\predicted_sales.csv'
         shutil.move(a,b)
         # return redirect(url_for('download'))
         # return 'UPLOADED'
-        return send_from_directory('output','predicted_sales.csv')
+        return send_from_directory('static','predicted_sales.csv')
     # return render_template('index.html')
 
 if __name__=="__main__":
