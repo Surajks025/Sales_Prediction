@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <title>Sales Prediction</title>
 </head>
 <body>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <label for="file">File:</label>
-        <input type="file" id="file" name="file"><br>
-        <button>Upload</button>
-    </form>
+    <div class="banner"> 
+        <div class="content">
+            <h1>Want to take your BUSINESS a step forward !!!</h1>
+            <p>Easily predict your upcoming sales with our Sales Predictor <br>Our Sales Predictor predicts your sales using Machine Learning <br>Just upload a CSV file and get your sales predicted...</p>
+            <div>
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <label for="file"></label>
+                    <div class="container">
+                        <input type="file" id="file" name="file" class="upload-box"><br>
+                    </div>
+                    <button><span></span> Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
